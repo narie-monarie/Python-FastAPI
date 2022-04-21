@@ -4,6 +4,7 @@ from config.database import connection
 from schemas.student import studentEntity, listOfStudentEntity
 from bson import ObjectId
 
+
 student_router = APIRouter()
 
 # getting all students
