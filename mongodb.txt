@@ -1,0 +1,7 @@
+add data in mongo db 
+"use cruddb" - creates  the  database name
+"db.createCollections("users")" - create the table name
+"db.users.insertOne({name: "Job Monari",  number: "0712345678", state: "Nairobi"})" - creates values inside the table
+"db.users.find({name: "Job Monari"});"  - find any value in the table
+"db.users.deleteOne({name: "Job Monari"});" - delete a value inside a table
+"db.users.updateOne({name: "Job Monari"}, {$set {name: "Job Onsongo"}});" - update usetrs inside a table
