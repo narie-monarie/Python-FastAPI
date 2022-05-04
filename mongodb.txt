@@ -1,3 +1,10 @@
+#Trouble shooting MongoDB
+sudo service mongodb stop
+sudo rm /var/lib/mongodb/mongod.lock
+sudo mongod --repair --dbpath /var/lib/mongodb
+sudo mongod --fork --logpath /var/lib/mongodb/mongodb.log --dbpath /var/lib/mongodb
+sudo service mongodb start
+
 add data in mongo db 
 "use cruddb" - creates  the  database name
 "db.createCollections("users")" - create the table name
